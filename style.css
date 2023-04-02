@@ -7,12 +7,16 @@ body{
     width: 380px;
     height: 600px;
     padding: 10px;
-    
+
 }
 
 .task-input{
     height: 30px;
-    padding: 0 10px;
+    padding: 0 5px;
+}
+
+.task-input button {
+    height: 30px;
 }
 
 .task-input input{

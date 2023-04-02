@@ -1,5 +1,6 @@
 const taskInput = document.querySelector(".task-input input");
 const taskList = document.querySelector(".task-list");
+const taskCreation = document.querySelector(".task-input input");
 
 let todos = JSON.parse(localStorage.getItem("todolist2"));
 
@@ -28,6 +29,25 @@ function showTodo(){
 
 showTodo();
 
+function createTask() {
+    let userTask = taskInput.value.trim();
+    if(!isEdited){
+        if(!todos){
+          todos = [];
+        }
+
+        let taskInfo = {name: userTask, status : "incompleted"};
+        taskInput.value = "";
+        todos.push(taskInfo);
+      }
+        else{
+      isEdited = false;
+      todos[editID].name = userTask;
+      }
+       localStorage.setItem("todolist2",JSON.stringify(todos));
+        showTodo();
+}
+
 function deleteTask(selectedID){
   todos.splice(selectedID, "1");
   localStorage.setItem("todolist2",JSON.stringify(todos));
@@ -44,14 +64,14 @@ function editTask(selectedID, taskName){
 
 taskInput.addEventListener("keyup", e=>{
   let userTask = taskInput.value.trim();
-  
+
   if(e.key == "Enter" && userTask){
-    
+
     if(!isEdited){
     if(!todos){
       todos = [];
     }
-  
+
     let taskInfo = {name: userTask, status : "incompleted"};
     taskInput.value = "";
     todos.push(taskInfo);
@@ -61,21 +81,21 @@ taskInput.addEventListener("keyup", e=>{
   todos[editID].name = userTask;
   }
    localStorage.setItem("todolist2",JSON.stringify(todos));
-    showTodo(); 
+    showTodo();
   }
   });
 
   function updateStatus(selectedID){
     if(todos[selectedID].status == "incompleted"){
       todos[selectedID].status = "completed";
-      
+
     }
 
     else{
       todos[selectedID].status = "incompleted";
     }
-    
+
     localStorage.setItem("todolist2",JSON.stringify(todos));
     showTodo();
- 
+
   }
