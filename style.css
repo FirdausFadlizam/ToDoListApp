@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+
+.wrapper{
+    background-color: lightblue;
+    width: 380px;
+    height: 600px;
+    padding: 10px;
+    
+}
+
+.task-input{
+    height: 30px;
+    padding: 0 10px;
+}
+
+.task-input input{
+height: 100%;
+width: 300px;
+margin-top: 5px;
+padding: 0 20px 0 20px;
+
+}
+
+.task-list .task{
+list-style: none;
+padding: 0 10px;
+
+}
+
+.task .settings{
+    position:absolute;
+}
+
+.task label{
+    display: flex;
+}
+
+.task label input{
+    margin-right:10px;
+}
+
+.task label button, li{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.task label button{
+    margin-right: 10px;
+}
+
+p.checked{
+    text-decoration: line-through;
+}
