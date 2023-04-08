@@ -17,9 +17,9 @@ function showTodo(){
         <input type="checkbox" onclick="updateStatus(${id})" id="${id}" ${isChecked}>
         <p class="${isChecked}">${todo.name}</p>
       </label>
-      <button onclick="deleteTask(${id})">Delete</button>
-      <button onclick="editTask(${id},'${todo.name}')">Edit</button>
-  </li>`;
+      <button id="edit" onclick='editTask(${id}, "${todo.name}")'><i class="uil uil-pen"></i>Edit</button>
+      <button id="delete" onclick='deleteTask(${id})'><i class="uil uil-trash"></i>Delete</button>
+    </li>`;
 
   });
   }

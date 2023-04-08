@@ -4,10 +4,13 @@ body{
 
 .wrapper{
     background-color: lightblue;
-    width: 380px;
+    border-radius: 15px;
+    width: 400px;
     height: 600px;
     padding: 10px;
-
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
 }
 
 .task-input{
@@ -24,15 +27,18 @@ height: 100%;
 width: 300px;
 margin-top: 5px;
 padding: 0 20px 0 20px;
+}
 
+.task-list {
+    padding-left: 0;
 }
 
 .task-list .task{
-list-style: none;
-padding: 0 10px;
-
+list-style:none;
+width: 380px;
+margin: 5% 0;
+border: 2px solid blue;
 }
-
 .task .settings{
     position:absolute;
 }
@@ -47,12 +53,28 @@ padding: 0 10px;
 
 .task label button, li{
     display:flex;
-    justify-content:space-between;
     align-items: center;
 }
 
 .task label button{
     margin-right: 10px;
+}
+
+.task button {
+    position: sticky;
+    overflow-wrap: break-word;
+}
+
+#edit {
+    left: 70%;
+}
+
+#delete {
+    left: 80%;
+}
+
+p {
+    max-width: 230px;
 }
 
 p.checked{
