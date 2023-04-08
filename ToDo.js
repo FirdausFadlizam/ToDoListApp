@@ -89,11 +89,12 @@ taskInput.addEventListener("keyup", e=>{
   function updateStatus(selectedID){
     if(todos[selectedID].status == "incompleted"){
       todos[selectedID].status = "completed";
-
+      todos.push(todos.splice(selectedID, 1)[0]);
     }
 
     else{
       todos[selectedID].status = "incompleted";
+      todos.splice(0,0,todos.splice(selectedID,1)[0]);
     }
 
     localStorage.setItem("todolist2",JSON.stringify(todos));
