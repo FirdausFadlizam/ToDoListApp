@@ -43,6 +43,7 @@ function createTask() {
         else{
       isEdited = false;
       todos[editID].name = userTask;
+      taskInput.value = "";
       }
        localStorage.setItem("todolist2",JSON.stringify(todos));
         showTodo();

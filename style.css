@@ -3,11 +3,11 @@ body{
 }
 
 .wrapper{
-    background-color: lightblue;
-    border-radius: 15px;
+    background-image: url('https://st3.depositphotos.com/24452164/32234/i/450/depositphotos_322346026-stock-photo-grunge-background-texture-design.jpg');
+    border-radius: 10px;
     width: 400px;
     height: 600px;
-    padding: 10px;
+    padding: 15px;
     overflow-y: scroll;
     overflow-x: hidden;
     overflow-wrap: anywhere;
@@ -20,6 +20,12 @@ body{
 
 .task-input button {
     height: 30px;
+    color:blue;
+    transition-duration: 0.4s;
+}
+
+.task-input button:hover {
+    background-color:green;
 }
 
 .task-input input{
@@ -27,6 +33,8 @@ height: 100%;
 width: 300px;
 margin-top: 5px;
 padding: 0 20px 0 20px;
+color:blue;
+border: 2px solid blue;
 }
 
 .task-list {
@@ -37,7 +45,9 @@ padding: 0 20px 0 20px;
 list-style:none;
 width: 380px;
 margin: 5% 0;
-border: 2px solid blue;
+border: 2px solid yellow;
+border-radius:5px;
+background-color:rgba(255, 0, 0, 0.5);
 }
 .task .settings{
     position:absolute;
@@ -45,6 +55,7 @@ border: 2px solid blue;
 
 .task label{
     display: flex;
+    margin-left: 10px;
 }
 
 .task label input{
@@ -63,18 +74,26 @@ border: 2px solid blue;
 .task button {
     position: sticky;
     overflow-wrap: break-word;
+    transition-duration: 0.4s;
+}
+
+.task button:hover {
+    background-color:yellow;
 }
 
 #edit {
     left: 70%;
+    color: blue;
 }
 
 #delete {
     left: 80%;
+    color: red;
 }
 
 p {
     max-width: 230px;
+    color:white;
 }
 
 p.checked{
