@@ -8,13 +8,18 @@
     <body>
 
         <div class="wrapper">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" target="_parent">About</a></li>
+                <li><a href="contact.html" target="_parent">Contact</a></li>
+              </ul>
             <div class="task-input">
                 <input type="text" placeholder="Add a new task">
                 <div class="button" style="position:relative; left:343px; top:-32px">
                     <button type="button" onclick="createTask()">Add</button>
                 </div>
             </div>
-            <ul class="task-list"></ul>
+                <ul class="task-list"></ul>
         </div>
 
         <script src="ToDo.js"></script>

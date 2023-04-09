@@ -100,3 +100,41 @@ p {
 p.checked {
     text-decoration: line-through;
 }
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  .menu li a:hover {
+    background-color: #111;
+  }
+
+  #desc {
+    position:relative;
+    left:5%;
+    max-width:340px;
+  }
+
+  #contact-desc {
+    position:relative;
+    left:25%;
+    top:20%;
+    font-size: x-large;
+  }
