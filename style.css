@@ -105,23 +105,28 @@ p.checked {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    max-width:fit-content;
     overflow: hidden;
     background-color: blue;
   }
 
   .menu li {
     float: left;
+    border-right: 2px solid #bbb;
+  }
+
+  .menu li:last-child {
+    border-right:none;
   }
 
   .menu li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 11px 41px;
     text-decoration: none;
   }
 
-  /* Change the link color to #111 (black) on hover */
   .menu li a:hover {
     background-color: #111;
   }
