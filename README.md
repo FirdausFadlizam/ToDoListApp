@@ -1,4 +1,4 @@
-<h1>**ToDoList Application**</h1>
+<h1>ToDoList Application</h1>
 
 Developers: Jaishree Jaikumar, Muhammad Firdaus Fadlizam
 
@@ -38,8 +38,9 @@ Go to the this link, https://developer.android.com/studio and click on Android S
 8. You may have to wait for Android Studio to install Gradle to run the project. 
 
 Note: We have tested this application on Pixel XL with Android 11.0. You may use other devices and android versions.
+      However, the application user interface may differ from the one we have demonstrated. 
 
-**Add a Phone Emulator**  
+**Add a Phone Emulator**        
 1. Go to tools and select Device Manager.
 2. Click on Create Device. 
 3. Choose Pixel XL and click next. 
@@ -48,11 +49,11 @@ Note: We have tested this application on Pixel XL with Android 11.0. You may use
 6. You may choose to change any of the options and click finish. 
 
 
-**Run the application** 
+**Run the application**              
 Go to Run and select Run 'app'.  
 
 
-**Use the Application?**
+<h2>Application Features</h2>       
 Now the device will run the application. Application features are listed below. 
 
 **Add task**   
@@ -82,7 +83,9 @@ Now the device will run the application. Application features are listed below.
 1. Click on the checkbox next to the task that has been checked.
 2. The tickmark will disappear and the text strikethroughed is undone. The task moves to the top of the list. 
 
-**Generate an APK**
+
+
+<h2>Generate an APK </h2>
 1. Go to Build Bundle(s)/APK(s).
 2. Select Build APK(s).
 3. A message will appear at the bottom of the screen.
