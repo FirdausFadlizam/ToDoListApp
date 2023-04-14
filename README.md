@@ -85,8 +85,9 @@ Now the device will run the application. Application features are listed below.
 
 
 
-<h2>Generate an APK </h2>
-1. Go to Build Bundle(s)/APK(s).          
+<h2>Generate an APK </h2>           
+
+1. Go to Build Bundle(s)/APK(s).
 2. Select Build APK(s).       
 3. A message will appear at the bottom of the screen.       
 4. You can click on locate to open folder that contains the APK. 
